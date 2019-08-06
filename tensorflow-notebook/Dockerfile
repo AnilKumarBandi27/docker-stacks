@@ -8,6 +8,13 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 # Install Tensorflow
 RUN conda install --quiet --yes \
     'tensorflow=1.13*' \
+    'opencv-python-headless-4.1*' \
+    'twitterAPI-2.5*' \
+    'tweepy-3.8.0*' \
+    'textblob-0.15.3' \
+    'nltk-3.4.4' \
+    'wordcloud-1.5.0*' \
+    
     'keras=2.2*' && \
     conda clean --all -f -y && \
     fix-permissions $CONDA_DIR && \
